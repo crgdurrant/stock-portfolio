@@ -30,7 +30,7 @@ const DropDownList = styled("ul")`
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
-  color: #3faffa;
+  color: #645858;
   font-size: 1.3rem;
   font-weight: 500;
   &:first-child {
@@ -41,24 +41,26 @@ const ListItem = styled("li")`
   list-style: none;
   margin-bottom: 0.8em;`;
 
-export default function StockMenu(){
+export default function StockMenu(props){
 
   const [isOpen, setIsOpen] = React.useState(false)
 
   const [selectedOption, setSelectedOption] = React.useState(null)
 
-  const options = ["Aspen", "Richemont", "Naspers", "Firstrand", "AngloGold Ashanti gold", "Sasol"]
+  const options = ["Aspen", "Richemont", "Naspers", "Firstrand", "AngloGold", "Sasol"]
 
   const toggling = () => setIsOpen(!isOpen);
-
-  const chosenOptions = []
 
   const onOptionClicked = value => () => {
     setSelectedOption(value)
     setIsOpen(false)
-    chosenOptions.push(value)
-    console.log(value)
+    props.name(value)
+    props.afterSelection()
+    props.addBlock(value)
   }
+
+
+  props.name(selectedOption)
 
 
 

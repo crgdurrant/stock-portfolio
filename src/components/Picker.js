@@ -3,8 +3,7 @@ import Block from "./Block"
 import AddBlock from "./AddBlock"
 import Results from "./Results"
 import {nanoid} from "nanoid"
-import data from "../stockList.json"
-import StockMenu from "./StockMenu"
+import SelectBlock from "./SelectBlock"
 
 export default function Picker(){
 
@@ -12,44 +11,57 @@ export default function Picker(){
 
   const [resultsPage, setResultsPage] = React.useState(true)
 
+  const [singleCom, setSingleCom] = React.useState("place")
+
 
   function addBlock(){
     setComponents([...components,
-                  <Block 
-                  id={nanoid()} 
-                  onClick={deleteBlock} 
-                  name={getData()}/>])              
+                  <SelectBlock 
+                    id={"select"} 
+                    onClick={setSingleCom} 
+                    name={setSingleCom}
+                    addFunction={addStockBlock}/>])            
   }
 
+  function addStockBlock(name){
+    setComponents([...components,
+                  <Block 
+                    id={nanoid()}
+                    name={name}
+                    onClick={deleteBlock}/>
+    ])
+  }
+
+  console.log(singleCom)
+
+  React.useEffect(() => {
+    console.log(components)
+  },[components])
+
   function deleteBlock(event, blockId){
-    setComponents(oldComponents => oldComponents.filter(comp => comp.props.id !== blockId))
+    setComponents(oldComponents => oldComponents.filter(comp => comp.props.name !== blockId))
   }
 
   function getRandomNumber(){
     return Math.floor(Math.random()*10)
   }
 
-  function getData(){
-    const jsonData= require('../stockList.json');
-    return jsonData.stocks[getRandomNumber()].name;
-  }
-
-  function stockList(){
-    const stockArr =[]
-    for(let i=0; i < components.length; i++){
-      stockArr.push(components[i].props.name)
-    }
-    console.log(stockArr)
-    getResults()
-  }
+  // function getData(){
+  //   const jsonData= require('../stockList.json');
+  //   return jsonData.stocks[getRandomNumber()].name;
+  // }
 
   function getResults(){
     setResultsPage(prevResults => !prevResults)
   }
 
-  function getPrice(years){
-    const priceArr =[]
-  }
+  //* */ Get the list of stock components that have been selected.
+
+  const compList = components.map(comp => {
+    return comp.props.name
+  })
+
+  console.log(compList)
 
   return(
     
@@ -61,11 +73,11 @@ export default function Picker(){
           {components.map((item, i) => (item))}
           <AddBlock  onClick={addBlock}/>
         </div>
-        <button className="results-btn" onClick={stockList}>Get results</button>
+        <button className="results-btn" onClick={getResults}>Get results</button>
       </div> : 
       <div>
         <Results />
-        <button className="results-btn" onClick={getResults}>Go back</button>
+        <button className="results-btn" onClick={(getResults)}>Go back</button>
       </div>
       }
       

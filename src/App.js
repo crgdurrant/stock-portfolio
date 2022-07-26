@@ -14,7 +14,6 @@ function App() {
       {/* <Landing /> */}
       <Picker />
       <Footer />
-      <StockMenu />
     </div>
   );
 }
