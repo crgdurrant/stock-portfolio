@@ -3,82 +3,80 @@
   [{
     "name": "Naspers",
     "stock_code": "NPN",
-    "today_price": 2529.00,
-    "one-year": 2675.17,
-    "three_year": 3448.43,
-    "five-year": 2720.95
+    "broker_rating": "SELL",
+    "trend": "DOWN",
+    "market_cap": "839.46B",
+    "return": 9.3
   },
   {
     "name": "Sasol",
     "stock_code": "SOL",
-    "today_price": 334.70,
-    "one-year": 219.18,
-    "three_year": 304.21,
-    "five-year": 378.75
+    "broker_rating": "SELL",
+    "trend": "DOWN",
+    "market_cap": "216.61B",
+    "return": 15.3
   },
   {
     "name": "Firstrand",
     "stock_code": "FSR",
-    "today_price": 62.16,
-    "one-year": 53.22,
-    "three_year": 57.00,
-    "five-year": 50.08
+    "broker_rating": "BUY",
+    "trend": "UP",
+    "market_cap": "1.07T",
+    "5yr_return": 9.3
   },
   {
     "name": "Shoprite",
     "stock_code": "SHP",
-    "today_price": 201.95,
-    "one-year": 160.40,
-    "three_year": 155.01,
-    "five-year": 204.00
+    "broker_rating": "BUY",
+    "trend": "UP",
+    "market_cap": "1.07T",
+    "return": 9.3
   },
   {
     "name": "Telkom",
     "stock_code": "TKG",
-    "today_price": 34.22,
-    "one-year": 44.90,
-    "three_year": 83.39,
-    "five-year": 66.13
+    "broker_rating": "BUY",
+    "trend": "UP",
+    "market_cap": "1.07T",
+    "return": 9.3
   },
   {
     "name": "Aspen Pharma",
     "stock_code": "APN",
-    "today_price": 141.82,
-    "one-year": 161.77,
-    "three_year": 88.89,
-    "five-year": 281.87
+    "broker_rating": "BUY",
+    "trend": "UP",
+    "market_cap": "1.07T",
+    "return": 9.3
   },
   {
-    "name": "Anglogold",
+    "name": "AngloGold",
     "stock_code": "ANG",
-    "today_price": 248.73,
-    "one-year": 283.50,
-    "three_year": 252.44,
-    "five-year": 128.75
+    "broker_rating": "BUY",
+    "trend": "UP",
+    "market_cap": "1.07T",
+    "return": 9.3
   },
   {
     "name": "Absa Group Ltd",
-    "stock_code": "ABG",
-    "today_price": 154.51,
-    "one-year": 139.18,
-    "three_year": 153.69,
-    "five-year": 143.93
+    "broker_rating": "BUY",
+    "trend": "UP",
+    "market_cap": "1.07T",
+    "return": 9.3
   },
   {
     "name": "PSG Group",
-    "stock_code": "PSG",
-    "today_price": 85.70,
-    "one-year": 76.25,
-    "three_year": 52.44,
-    "five-year": 60.20
+    "broker_rating": "BUY",
+    "trend": "UP",
+    "market_cap": "1.07T",
+    "return": 9.3
   },
   {
     "name": "Richemont",
     "stock_code": "CFR",
-    "today_price": 178.34,
-    "one-year": 174.64,
-    "three_year": 121.11,
-    "five-year": 107.96
+    "broker_rating": "BUY",
+    "trend": "UP",
+    "market_cap": "1.07T",
+    "return": 9.3
   }]
 
 }

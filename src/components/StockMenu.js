@@ -47,7 +47,7 @@ export default function StockMenu(props){
 
   const [selectedOption, setSelectedOption] = React.useState(null)
 
-  const options = ["Aspen", "Richemont", "Naspers", "Firstrand", "AngloGold", "Sasol"]
+  const options = ["Aspen Pharma", "Richemont", "Naspers", "Firstrand", "AngloGold", "Sasol"]
 
   const toggling = () => setIsOpen(!isOpen);
 
@@ -82,8 +82,7 @@ export default function StockMenu(props){
             </DropDownList>
         </DropDownListContainer>
         )}
-        
-
+      
       </DropDownContainer>
     </ Main>
   )
