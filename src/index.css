@@ -308,15 +308,15 @@ code {
   margin-bottom: 20px;
   border-radius: 20px;
   display: flex;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .img-box {
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-  margin-left: 20px;
-  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px 0px 0px 20px;
+  /* margin-left: 20px;
+  margin-top: 20px; */
   overflow: hidden;
 }
 
@@ -349,6 +349,7 @@ code {
 .read-more {
   text-align: right;
   margin-right: 20px;
+  
 }
 
 .read-more > a:link {
@@ -378,17 +379,83 @@ code {
 /* Admin Style */
 
 .admin-page {
-  height: 80.5vh;
+  height: 82vh;
   display: flex;
   flex-direction: column;
 }
 
 .admin-container {
   min-width: 708px;
-  height: 72vh;
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.full-post-page {
+  min-height: 82vh;
+}
+
+.full-post-container {
+  width: 708px;
+  background-color: #fbdddc;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-post-container {
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 20px;
+  /* padding: 20px; */
+  
+}
+
+.inner-post-container > p {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.blog-content-box > a {
+  text-decoration: none;
+  color: #000000;
+
+}
+
+.blog-content-box > a:hover {
+  background-color:#de5d5d 
+}
+
+.author-info {
+  border: 1px black solid;
+  box-shadow: 2px 2px #c9736e;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: left;
+  padding: 20px;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-btn:link {
+  text-decoration: none;
+  color: #000000;
 }

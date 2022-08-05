@@ -8,9 +8,9 @@ import React from "react"
 import StockMenu from './components/StockMenu';
 import Blog from './components/Blog';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import SingleBlogPost from './components/SingleBlogPost';
 import About from './components/About';
 import Admin from './components/Admin';
+import SingleBlogFull from "./components/SingleBlogFull"
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
           </Route>
 
           <Route exact path="/blog/:id">
-            <SingleBlogPost />
+            <SingleBlogFull />
           </Route>
 
           <Route exact path="/about">
